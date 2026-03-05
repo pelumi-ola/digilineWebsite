@@ -37,7 +37,7 @@ export function Partners() {
       }}
     >
       {/* Partners Section */}
-      <section className="py-16 md:py-24 md:px-20 px-4">
+      <section className="py-5 md:py-20 md:px-20 px-4">
         <div className="text-center mb-12 md:mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
             Our Partners

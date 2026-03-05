@@ -23,7 +23,7 @@ export function Footer() {
 
   return (
     <footer className="bg-primary text-white pt-40 pb-10 mt-55 rounded-tl-[10rem] relative">
-      <div className="px-6 lg:px-30 mb-20 -top-30 absolute">
+      <div className="px-4 lg:px-30 mb-20 md:-top-30 -top-40 absolute">
         <Newsletter />
       </div>
       <motion.div

@@ -45,7 +45,7 @@ export function Newsletter({
         once: false,
         amount: 0.3,
       }}
-      className="flex flex-row bg-[#9D66F1]/44 py-12 md:py-10 px-8 gap-5 md:gap-60 mx-auto rounded-br-[80px] backdrop-blur-md shadow-2xl"
+      className="flex md:flex-row flex-col bg-[#9D66F1]/44 py-12 md:py-10 px-4 md:px-8 gap-5 md:gap-60 mx-auto rounded-br-[80px] backdrop-blur-md shadow-2xl overflow-hidden"
     >
       <div className="mb-8 text-ring">
         <h2 className="text-md md:text-2xl font-bold mb-3 text-balance">

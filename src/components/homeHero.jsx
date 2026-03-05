@@ -48,9 +48,9 @@ export function Hero({
   showButtons = false,
 }) {
   return (
-    <section className="relative bg-white py-20 overflow-hidden">
+    <section className="relative bg-white md:py-20 py-10 px-4 md:px-0 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-12 gap-5 items-center">
           {/* LEFT SIDE - TEXT */}
           <motion.div
             variants={container}
@@ -141,7 +141,7 @@ export function Hero({
                   <motion.div variants={float} animate="animate">
                     <MovingBorderCard>
                       <div className="bg-purple-300 rounded-[40px] p-3">
-                        <div className="relative w-48 h-80 md:w-56 md:h-96 rounded-[30px] overflow-hidden">
+                        <div className="relative w-40 h-80 md:w-56 md:h-96 rounded-[30px] overflow-hidden">
                           <Image
                             src={heroImages[0]}
                             alt="Hero 1"
@@ -164,7 +164,7 @@ export function Hero({
                     <motion.div variants={float} animate="animate">
                       <MovingBorderCard>
                         <div className="bg-primary rounded-[40px] p-3">
-                          <div className="relative w-44 h-36 md:w-52 md:h-44 rounded-[30px] overflow-hidden">
+                          <div className="relative w-40 h-36 md:w-52 md:h-44 rounded-[30px] overflow-hidden">
                             <Image
                               src={heroImages[1]}
                               alt="Hero 2"
@@ -182,7 +182,7 @@ export function Hero({
                     <motion.div variants={float} animate="animate">
                       <MovingBorderCard>
                         <div className="bg-white rounded-[40px] p-3 border shadow-lg">
-                          <div className="relative w-44 h-36 md:w-52 md:h-44 rounded-[30px] overflow-hidden">
+                          <div className="relative w-40 h-36 md:w-52 md:h-44 rounded-[30px] overflow-hidden">
                             <Image
                               src={heroImages[2]}
                               alt="Hero 3"
