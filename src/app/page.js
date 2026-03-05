@@ -94,7 +94,7 @@ export default function Home() {
         description="Digiline is a trusted telecommunications solution provider offering reliable SMS, USSD, voice, airtime, and data services for businesses of all sizes. We help organizations improve customer engagement, streamline operations, and drive growth through secure, scalable, and customer-focused value-added solutions."
         primaryCTA={{ text: "Start Your Journey", href: "/contact" }}
         secondaryCTA={{ text: "View Solution", href: "/solutions" }}
-        heroImage={[img1, img2, img3]}
+        heroImages={[img1, img2, img3]}
         showButtons={true}
       />
 
