@@ -1,12 +1,10 @@
 "use client";
-import { Navbar } from "@/components/navbar";
+
 import { Hero } from "@/components/homeHero";
 import { ServiceCard } from "@/components/service-card";
-import { Newsletter } from "@/components/newsletter";
-import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { herobg, herotextImg } from "@/assets";
+import { img1, img2, img3, herotextImg } from "@/assets";
 import Image from "next/image";
 import { GrTechnology } from "react-icons/gr";
 import { BiSolidUserVoice } from "react-icons/bi";
@@ -96,7 +94,7 @@ export default function Home() {
         description="Digiline is a trusted telecommunications solution provider offering reliable SMS, USSD, voice, airtime, and data services for businesses of all sizes. We help organizations improve customer engagement, streamline operations, and drive growth through secure, scalable, and customer-focused value-added solutions."
         primaryCTA={{ text: "Start Your Journey", href: "/contact" }}
         secondaryCTA={{ text: "View Solution", href: "/solutions" }}
-        backgroundImage={herobg}
+        backgroundImage={[img1, img2, img3]}
         showButtons={true}
       />
 
