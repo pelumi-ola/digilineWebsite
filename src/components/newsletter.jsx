@@ -56,7 +56,7 @@ export function Newsletter({
 
       <form
         onSubmit={handleSubmit}
-        className="flex flex-row sm:flex-row max-w-md mt-5 relative"
+        className="flex flex-cols md:flex-row max-w-md mt-5 relative"
       >
         <Input
           type="email"
@@ -68,7 +68,7 @@ export function Newsletter({
         />
         <Button
           type="submit"
-          className="absolute right-0 top-0.5 bg-primary hover:bg-purple-950 text-white font-semibold px-3 py-3 rounded-full text-sm uppercase tracking-wide whitespace-nowrap"
+          className="absolute right-0 top-0.5 bg-primary hover:bg-purple-950 text-white font-semibold px-3 py-3 rounded-full text-sm capitalize tracking-wide whitespace-nowrap"
         >
           {buttonText}
         </Button>

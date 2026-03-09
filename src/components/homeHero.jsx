@@ -95,7 +95,7 @@ export function Hero({
                       whileHover={{ scale: 1.08 }}
                       whileTap={{ scale: 0.96 }}
                     >
-                      <Button className="bg-primary hover:bg-primary/90 text-white px-13 py-9 rounded-xl font-semibold uppercase text-sm">
+                      <Button className="bg-primary hover:bg-primary/90 text-white px-13 py-9 rounded-xl font-semibold capitalize text-sm">
                         {primaryCTA.text}
                         <ArrowRight className="w-5 h-5 ml-2" />
                       </Button>
@@ -111,7 +111,7 @@ export function Hero({
                     >
                       <Button
                         variant="outline"
-                        className="border-2 border-primary text-primary px-10 py-8 rounded-xl font-semibold uppercase text-sm"
+                        className="border-2 border-primary text-primary px-10 py-8 rounded-xl font-semibold capitalize text-sm"
                       >
                         {secondaryCTA.text}
                       </Button>
