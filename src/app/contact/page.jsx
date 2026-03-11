@@ -22,7 +22,7 @@ const slideLeft = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.8, ease: "easeOut" },
+    transition: { duration: 0.3, ease: "easeOut" },
   },
 };
 
@@ -57,7 +57,7 @@ export default function ContactPage() {
         <motion.section
           variants={fadeUp}
           initial="hidden"
-          whileInView="visible"
+          whileInView="visib"
           viewport={{ once: false, amount: 0.3 }}
           className="py-20"
         >
@@ -118,7 +118,7 @@ export default function ContactPage() {
                         Call Us
                       </h4>
                       <p className="text-xs text-gray-600">
-                        +234 (0) 808 125 2322
+                        +234 (0) 9012345678
                       </p>
                     </div>
                   </div>

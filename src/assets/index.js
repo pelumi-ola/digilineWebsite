@@ -40,19 +40,25 @@ import wdcard001 from "../../public/wd-card-001.png";
 import wdcard002 from "../../public/wd-card-002.png";
 import wdcard003 from "../../public/wd-card-003.png";
 import wdcard004 from "../../public/wd-card-004.png";
-import digilogoFooter from "../../public/digilogo-footer.svg";
+import digilogoFooter from "../../public/digilogo-white.svg";
 import RxDividerVertical from "../../public/RxDividerVertical.svg";
 import ServiceheroImg from "../../public/serviceheroImg.png";
 import contacttextImg from "../../public/contact-text-img.png";
 import img1 from "../../public/img1.png";
 import img2 from "../../public/img2.png";
 import img3 from "../../public/img3.png";
-import abstract from '../../public/abstract.png';
-import abstract2 from '../../public/abstract2.png';
-import heroContactImg from '../../public/call-hero-img.png';
+import abstract from "../../public/abstract.png";
+import abstract2 from "../../public/abstract2.png";
+import heroContactImg from "../../public/call-hero-img.png";
+import GamesheroImg from "../../public/games-hero-bg.png";
+import productImg from "../../public/product-img.png";
+import productheroimg from "../../public/productHero_bg.png";
 
 export {
   heroContactImg,
+  GamesheroImg,
+  productImg,
+  productheroimg,
   abstract,
   abstract2,
   img1,

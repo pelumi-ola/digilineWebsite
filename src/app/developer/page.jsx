@@ -8,6 +8,7 @@ import SolutionsCards from "@/components/solutions-card";
 import { RxSlash } from "react-icons/rx";
 import UsecasesCard from "@/components/usecasesCard";
 import { motion } from "framer-motion";
+import ProductPreview from "@/components/productpreview";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 60 },
@@ -92,6 +93,8 @@ export default function Developer() {
       </motion.section>
 
       <SolutionsCards />
+
+      <ProductPreview />
 
       <SalesPerformance />
 

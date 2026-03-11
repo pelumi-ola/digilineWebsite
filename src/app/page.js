@@ -87,7 +87,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-white overflow-hidden flex flex-col gap-30">
+    <div className="min-h-screen bg-white overflow-hidden">
       {/* Hero Section */}
       <Hero
         title="Powering Smarter Business Communications"
@@ -104,7 +104,7 @@ export default function Home() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
-        className="p-8 md:p-8 bg-white hover:shadow-lg transition-shadow rounded-xl shadow-lg"
+        className="p-8 md:py-8 md:px-15 bg-white hover:shadow-lg transition-shadow rounded-xl shadow-lg"
       >
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-xl md:text-3xl font-bold text-gray-800 mb-4">
@@ -131,7 +131,7 @@ export default function Home() {
       </motion.div>
 
       {/* Who We Are Section */}
-      <section className="relative">
+      <section className="relative mt-20">
         <div className="absolute inset-0 z-0 pointer-events-none opacity-40">
           <GridScan
             sensitivity={0.4}
