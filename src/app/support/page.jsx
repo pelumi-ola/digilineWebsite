@@ -103,7 +103,7 @@ export default function SupportPage() {
         </div>
 
         {/* Floating WhatsApp */}
-        <div className="fixed bottom-6 right-6 flex items-center gap-3 bg-white px-4 py-2 rounded-full shadow-lg">
+        <div className="fixed bottom-28 right-6 flex items-center gap-3 bg-white px-4 py-2 rounded-full shadow-lg">
           <FaWhatsapp className="text-green-500 w-5 h-5" />
           <span className="text-xs text-gray-700">Need Help? Chat with Us</span>
         </div>
