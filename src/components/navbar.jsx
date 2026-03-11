@@ -27,7 +27,6 @@ export function Navbar() {
       icon: BiChevronDown,
       mega: true,
       products: [
-        { label: "Product", href: "/products" },
         { label: "Lottery - Spin it", href: "/products/lottery" },
         { label: "Trivia - Edu-Digi", href: "/products/trivia" },
         {
@@ -39,10 +38,6 @@ export function Navbar() {
         { label: "Ring Back Tone (RBT)", href: "/products/RBT" },
       ],
       services: [
-        {
-          label: "Solutions",
-          href: "/solutions",
-        },
         {
           label: "SMS & USSD Authentication Solutions (OTP & 2FA)",
           href: "/solutions/sms-ussd",
@@ -158,11 +153,18 @@ export function Navbar() {
                       <div className="grid grid-cols-2 gap-10">
                         {/* Products */}
                         <div>
-                          <h3 className="text-sm font-bold text-[#0C6EB5] mb-4 uppercase">
+                          <Link
+                            href="/products"
+                            className={`text-sm font-bold mb-4 uppercase transition ${
+                              pathname === "/products"
+                                ? "text-primary border-b-2 border-primary"
+                                : "text-[#0C6EB5] hover:text-primary"
+                            }`}
+                          >
                             Products
-                          </h3>
+                          </Link>
 
-                          <div className="flex flex-col gap-3">
+                          <div className="flex flex-col gap-3 mt-5">
                             {link.products?.map((item) => (
                               <Link
                                 key={item.href}
@@ -181,11 +183,18 @@ export function Navbar() {
 
                         {/* Services */}
                         <div>
-                          <h3 className="text-sm font-bold text-[#0C6EB5] mb-4 uppercase">
+                          <Link
+                            href="/services"
+                            className={`text-sm font-bold uppercase transition ${
+                              pathname === "/services"
+                                ? "text-primary border-b-2 border-primary"
+                                : "text-[#0C6EB5] hover:text-primary"
+                            }`}
+                          >
                             Services
-                          </h3>
+                          </Link>
 
-                          <div className="flex flex-col gap-3">
+                          <div className="flex flex-col gap-3 mt-5">
                             {link.services?.map((item) => (
                               <Link
                                 key={item.href}
