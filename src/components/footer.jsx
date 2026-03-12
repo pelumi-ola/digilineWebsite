@@ -163,7 +163,7 @@ export function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-purple-300/40 my-10"></div>
+        <div className="border-t border-purple-300/40 my-6"></div>
 
         {/* Bottom */}
         <div className="text-center text-sm text-purple-200">
