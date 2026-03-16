@@ -152,14 +152,14 @@ export default function Home() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
-          className="relative py-16 md:py-30 md:px-20 px-4 bg-linear-to-b from-[#C78EFF] via-[#9e66f185] to-[#743EE3]"
+          className="relative py-16 md:py-30 md:px-20 px-4 bg-linear-to-b from-[#9b5ed8] via-[#4a2a7985] to-[#743EE3]"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20 items-center">
             <div className="flex flex-col align-items-start justify-utems-start">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                 Who We Are
               </h2>
-              <p className="text-purple-100 text-md mb-6 leading-relaxed">
+              <p className="text-white text-md mb-6 leading-relaxed">
                 At Digiline, we are redefining the telecommunications landscape
                 with innovative, reliable, and customer-focused solutions. With
                 years of experience in the industry, we have built a strong
@@ -171,7 +171,7 @@ export default function Home() {
                 recognized VAS authorities, ensuring quality, compliance, and
                 trust.
               </p>
-              <p className="text-purple-100 text-md mb-8 leading-relaxed">
+              <p className="text-white text-md mb-8 leading-relaxed">
                 Guided by a passion for digital transformation, our dedicated
                 team works tirelessly to deliver scalable and secure services
                 that drive engagement and operational efficiency. We value the

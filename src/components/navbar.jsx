@@ -55,7 +55,6 @@ export function Navbar() {
           label: "Micro Payments Solutions",
           href: "/solutions/micro-payments",
         },
-        { label: "Custom API Development", href: "/developer" },
       ],
     },
 
@@ -157,8 +156,8 @@ export function Navbar() {
                             href="/products"
                             className={`text-sm font-bold mb-4 uppercase transition ${
                               pathname === "/products"
-                                ? "text-primary border-b-2 border-primary"
-                                : "text-[#0C6EB5] hover:text-primary"
+                                ? "text-[#0C6EB5] border-b-2 border-primary"
+                                : "text-ring hover:text-primary"
                             }`}
                           >
                             Products
@@ -171,8 +170,8 @@ export function Navbar() {
                                 href={item.href}
                                 className={`text-sm transition ${
                                   pathname === item.href
-                                    ? "text-primary font-semibold border-b-2 border-primary"
-                                    : "text-[#0C6EB5] hover:text-primary"
+                                    ? "text-[#0C6EB5]  font-semibold border-b-2 border-primary"
+                                    : "text-ring hover:text-primary"
                                 }`}
                               >
                                 {item.label}
@@ -187,8 +186,8 @@ export function Navbar() {
                             href="/solutions"
                             className={`text-sm font-bold uppercase transition ${
                               pathname === "/services"
-                                ? "text-primary border-b-2 border-primary"
-                                : "text-[#0C6EB5] hover:text-primary"
+                                ? "text-[#0C6EB5] border-b-2 border-primary"
+                                : "text-ring hover:text-primary"
                             }`}
                           >
                             Services
@@ -201,8 +200,8 @@ export function Navbar() {
                                 href={item.href}
                                 className={`text-sm transition ${
                                   pathname === item.href
-                                    ? "text-primary font-semibold border-b-2 border-primary"
-                                    : "text-[#0C6EB5] hover:text-primary"
+                                    ? "text-[#0C6EB5] font-semibold border-b-2 border-primary"
+                                    : "text-ring hover:text-primary"
                                 }`}
                               >
                                 {item.label}
@@ -223,8 +222,8 @@ export function Navbar() {
                           href={item.href}
                           className={`transition px-2 py-1 rounded ${
                             isChildActive(item)
-                              ? "bg-[hsla(271,49%,83%,1)] text-white font-semibold"
-                              : "text-[#0C6EB5] hover:text-primary"
+                              ? "text-[#0C6EB5] font-semibold"
+                              : "text-ring hover:text-primary"
                           }`}
                         >
                           {item.label}
@@ -288,44 +287,79 @@ export function Navbar() {
                 )}
 
                 {/* Sublinks for mobile */}
+                {/* Sublinks for mobile */}
                 {(link.dropdown || link.mega) &&
                   openDropdown === link.label && (
                     <div className="flex flex-col pl-5 mt-1 mb-2">
-                      {/* For normal dropdown */}
-                      {link.dropdown?.map((item) => (
-                        <Link
-                          key={item.href}
-                          href={item.href}
-                          className={`block px-2 py-1 rounded ${
-                            pathname === item.href
-                              ? "bg-[hsla(271,49%,83%,1)] text-white font-semibold"
-                              : "text-sm font-medium text-gray-600 hover:text-primary hover:bg-gray-50"
-                          }`}
-                          onClick={() => setIsOpen(false)}
-                        >
-                          {item.label}
-                        </Link>
-                      ))}
+                      {link.mega ? (
+                        <>
+                          {/* Products Section */}
+                          {link.products?.length > 0 && (
+                            <div className="mb-4">
+                              <span className="text-sm font-bold uppercase text-gray-700">
+                                Products
+                              </span>
+                              <div className="flex flex-col mt-2">
+                                {link.products.map((item) => (
+                                  <Link
+                                    key={item.href}
+                                    href={item.href}
+                                    className={`block px-2 py-1 rounded ${
+                                      pathname === item.href
+                                        ? "text-[#0C6EB5] font-semibold"
+                                        : "text-sm font-medium text-ring hover:text-primary hover:bg-gray-50"
+                                    }`}
+                                    onClick={() => setIsOpen(false)}
+                                  >
+                                    {item.label}
+                                  </Link>
+                                ))}
+                              </div>
+                            </div>
+                          )}
 
-                      {/* For mega menu */}
-                      {link.mega &&
-                        [
-                          ...(link.products || []),
-                          ...(link.services || []),
-                        ].map((item) => (
+                          {/* Services Section */}
+                          {link.services?.length > 0 && (
+                            <div>
+                              <span className="text-sm font-bold uppercase text-gray-700">
+                                Services
+                              </span>
+                              <div className="flex flex-col mt-2">
+                                {link.services.map((item) => (
+                                  <Link
+                                    key={item.href}
+                                    href={item.href}
+                                    className={`block px-2 py-1 rounded ${
+                                      pathname === item.href
+                                        ? "text-[#0C6EB5] font-semibold"
+                                        : "text-sm font-medium text-ring hover:text-primary hover:bg-gray-50"
+                                    }`}
+                                    onClick={() => setIsOpen(false)}
+                                  >
+                                    {item.label}
+                                  </Link>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+                        </>
+                      ) : (
+                        // For normal dropdowns
+                        link.dropdown?.map((item) => (
                           <Link
                             key={item.href}
                             href={item.href}
                             className={`block px-2 py-1 rounded ${
                               pathname === item.href
-                                ? "bg-[hsla(271,49%,83%,1)] text-white font-semibold"
-                                : "text-sm font-medium text-gray-600 hover:text-primary hover:bg-gray-50"
+                                ? "text-[#0C6EB5] font-semibold"
+                                : "text-sm font-medium text-ring hover:text-primary hover:bg-gray-50"
                             }`}
                             onClick={() => setIsOpen(false)}
                           >
                             {item.label}
                           </Link>
-                        ))}
+                        ))
+                      )}
                     </div>
                   )}
               </div>

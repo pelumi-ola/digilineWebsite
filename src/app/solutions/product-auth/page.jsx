@@ -98,8 +98,6 @@ export default function ProductAuth() {
 
       {/* Use Cases Section */}
       <UsecasesCard />
-      <Testimonial />
-      <Partners />
     </div>
   );
 }

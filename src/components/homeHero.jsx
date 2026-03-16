@@ -66,7 +66,7 @@ export function Hero({
               transition={{ duration: 0.8 }}
               className="text-3xl md:text-4xl font-bold leading-tight mb-6"
             >
-              <span className="animated-gradient-text">{title}</span>
+              <span className="safe-gradient-text">{title}</span>
             </motion.h1>
 
             {description && (

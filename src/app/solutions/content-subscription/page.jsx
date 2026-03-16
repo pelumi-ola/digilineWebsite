@@ -110,8 +110,6 @@ export default function ContentSubsolution() {
 
       {/* Use Cases Section */}
       <UsecasesCard />
-      <Testimonial />
-      <Partners />
     </div>
   );
 }

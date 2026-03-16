@@ -107,8 +107,6 @@ export default function VoicedBased() {
 
       {/* Use Cases Section */}
       <UsecasesCard />
-      <Testimonial />
-      <Partners />
     </div>
   );
 }

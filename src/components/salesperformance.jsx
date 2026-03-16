@@ -1,11 +1,10 @@
 "use client";
 import React from "react";
-import { wdcard001, wdcard002, wdcard003, wdcard004 } from "@/assets";
-import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { Globe, Clock, ShieldCheck, Activity, TrendingUp } from "lucide-react";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 60 },
@@ -31,28 +30,24 @@ const staggerContainer = {
 export function SalesPerformance() {
   const proven = [
     {
-      icon: wdcard001,
+      icon: TrendingUp,
       title: "Performance that Speaks",
       desc: "Proven scalability and reliability across global deployments.",
-      bg: "bg-[linear-gradient(180deg,rgb(106,13,173)_0%,rgb(155,48,255)_100%)]",
     },
     {
-      icon: wdcard002,
+      icon: Globe,
       title: "Customer Centric",
       desc: "Tailored solutions built around real business needs.",
-      bg: "bg-[linear-gradient(180deg,rgb(138,43,226)_0%,rgb(218,112,214)_100%)]",
     },
     {
-      icon: wdcard003,
+      icon: Activity,
       title: "Digital Leadership",
       desc: "Driving innovation in a fast-evolving telecom landscape.",
-      bg: "bg-[linear-gradient(180deg,rgb(75,0,130)_0%,rgb(138,43,226)_100%)]",
     },
     {
-      icon: wdcard004,
+      icon: ShieldCheck,
       title: "Trust & Partnership",
       desc: "Long-term relationships built on transparency and results.",
-      bg: "bg-[linear-gradient(180deg,rgb(95,75,139)_0%,rgb(159,122,234)_100%)]",
     },
   ];
 
@@ -76,11 +71,11 @@ export function SalesPerformance() {
           <div className="flex items-center justify-center gap-4 px-20">
             <div className="flex-1 h-px bg-gray-300"></div>
 
-            <span className="md:text-3xl text-xl font-semibold text-[#000000]">
-              WHY DIGILINE
+            <span className="md:text-3xl text-xl font-bold tracking-tight">
+              Why Digiline
             </span>
 
-            <div className="flex-1 h-px bg-gray-300"></div>
+            <div className="flex-1 h-px bg-purple-200"></div>
           </div>
 
           <p className="text-sm text-primary mt-2">
@@ -98,22 +93,28 @@ export function SalesPerformance() {
             <motion.div
               key={i}
               variants={fadeUp}
-              className={`flex flex-col items-center text-white py-6 px-3 rounded-xl shadow-lg ${item.bg}`}
+              whileHover={{ y: -8 }}
+              transition={{ duration: 0.25 }}
+              className="group relative flex flex-col items-center text-center py-10 px-6 rounded-2xl bg-gradient-to-b from-white to-purple-50 border border-purple-100 shadow-sm hover:shadow-xl hover:ring-1 hover:ring-purple-200 transition-all duration-300"
             >
-              <div className="mb-4">
-                <Image
-                  src={item.icon}
-                  alt={item.title}
-                  width={70}
-                  height={70}
-                />
+              <div
+                className="mb-6 flex items-center justify-center w-16 h-16 rounded-xl bg-purple-100 group-hover:bg-purple-200 transition-colors duration-300"
+              >
+                <item.icon className="w-8 h-8 text-purple-700" />
               </div>
 
-              <h2 className="font-semibold text-md md:text-nowrap text-center">
+              {/* Title */}
+              <h3 className="text-gray-900 font-semibold text-md mb-3">
                 {item.title}
-              </h2>
-              <div className="w-25 h-[0.5px] bg-[#192038] my-2 rounded-full"></div>
-              <p className="text-sm opacity-90 text-center">{item.desc}</p>
+              </h3>
+
+              {/* Accent line */}
+              <div className="w-10 h-[2px] bg-purple-400 rounded-full mb-4"></div>
+
+              {/* Description */}
+              <p className="text-sm text-gray-600 leading-relaxed">
+                {item.desc}
+              </p>
             </motion.div>
           ))}
         </div>
@@ -127,10 +128,10 @@ export function SalesPerformance() {
             Proven at Scale
           </span>
 
-          <div className="flex-1 h-px bg-gray-300"></div>
+          <div className="flex-1 h-px bg-purple-200"></div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
           {[
             { number: "50+", label: "Countries Served" },
             { number: "10+", label: "Years Experience" },
@@ -140,11 +141,26 @@ export function SalesPerformance() {
             <motion.div
               key={i}
               variants={fadeUp}
-              className="bg-[linear-gradient(180deg,rgb(138,43,226)_0%,rgb(218,112,214)_100%)] text-white p-6 rounded-xl text-center shadow-md"
+              whileHover={{ y: -6 }}
+              transition={{ duration: 0.25 }}
+              className="group text-center py-8 px-6 rounded-2xl 
+  bg-white border border-purple-100 shadow-sm 
+  hover:shadow-lg transition-all duration-300"
             >
-              <h4 className="md:text-5xl text-3xl font-bold">{stat.number}</h4>
-              <div className="flex-1 h-px bg-[#192038] my-3"></div>
-              <p className="text-sm mt-1">{stat.label}</p>
+              {/* Number */}
+              <h4
+                className="text-4xl md:text-5xl font-bold 
+  bg-gradient-to-r from-purple-700 to-purple-500 
+  bg-clip-text text-transparent"
+              >
+                {stat.number}
+              </h4>
+
+              {/* Divider */}
+              <div className="w-10 h-[2px] bg-purple-300 rounded-full mx-auto my-4"></div>
+
+              {/* Label */}
+              <p className="text-sm text-gray-600 font-medium">{stat.label}</p>
             </motion.div>
           ))}
         </div>

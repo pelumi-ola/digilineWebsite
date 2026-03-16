@@ -97,8 +97,6 @@ export default function Developer() {
 
       {/* Use Cases Section */}
       <UsecasesCard />
-      <Testimonial />
-      <Partners />
     </div>
   );
 }

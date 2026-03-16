@@ -83,8 +83,6 @@ export default function MicroPayment() {
 
       {/* Use Cases Section */}
       <UsecasesCard />
-      <Testimonial />
-      <Partners />
     </div>
   );
 }

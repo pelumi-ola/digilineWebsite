@@ -139,8 +139,6 @@ export default function SMSandUSSD() {
 
       {/* Use Cases Section */}
       <UsecasesCard />
-      <Testimonial />
-      <Partners />
     </div>
   );
 }
