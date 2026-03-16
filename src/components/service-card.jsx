@@ -6,10 +6,10 @@ import { BsDatabaseFill } from "react-icons/bs";
 import { RiCellphoneFill } from "react-icons/ri";
 
 const iconMap = {
+  RiCellphoneFill,
   BsDatabaseFill,
   AiFillApi,
   FaMessage,
-  RiCellphoneFill,
 };
 
 export function ServiceCard({ icon, title, description }) {

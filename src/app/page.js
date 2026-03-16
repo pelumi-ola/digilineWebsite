@@ -38,7 +38,7 @@ const staggerContainer = {
 export default function Home() {
   const coreServices = [
     {
-      icon: "FcCellPhone",
+      icon: "RiCellphoneFill",
       title: "USSD Solutions",
       description:
         "Deliver fast, interactive experiences without the need for internet access.",
