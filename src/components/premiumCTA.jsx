@@ -1,16 +1,16 @@
 "use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 
 export default function PremiumCTA() {
-  const pathname = usePathname();
+  //   const pathname = usePathname();
 
-  // Show CTA only on product or service pages
-  const showCTA =
-    pathname.startsWith("/products") || pathname.startsWith("/solutions");
+  //   // Show CTA only on product or service pages
+  //   const showCTA =
+  //     pathname.startsWith("/products") || pathname.startsWith("/solutions");
 
-  if (!showCTA) return null;
+  //   if (!showCTA) return null;
 
   return (
     <motion.section
