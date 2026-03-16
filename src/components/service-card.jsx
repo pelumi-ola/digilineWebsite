@@ -1,15 +1,15 @@
 "use client";
 
-import { FcCellPhone } from "react-icons/fc";
 import { FaMessage } from "react-icons/fa6";
 import { AiFillApi } from "react-icons/ai";
 import { BsDatabaseFill } from "react-icons/bs";
+import { RiCellphoneFill } from "react-icons/ri";
 
 const iconMap = {
   BsDatabaseFill,
   AiFillApi,
   FaMessage,
-  FcCellPhone,
+  RiCellphoneFill,
 };
 
 export function ServiceCard({ icon, title, description }) {
