@@ -8,6 +8,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Mail } from "lucide-react";
+import PremiumCTA from '@/components/premiumCTA'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 60 },
@@ -36,7 +37,9 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-[#9D66F1] text-white pt-24 pb-12 rounded-tl-[10rem]">
+   <>
+    <PremiumCTA />
+    <footer className="bg-[#9D66F1] text-white pt-24 pb-12">
       <motion.div
         variants={fadeUp}
         initial="hidden"
@@ -172,5 +175,6 @@ export function Footer() {
         </div>
       </motion.div>
     </footer>
+   </>
   );
 }

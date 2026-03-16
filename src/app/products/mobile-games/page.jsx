@@ -1,13 +1,10 @@
 "use client";
 import { Hero } from "@/components/hero";
 import { GamesheroImg } from "@/assets";
-import { Partners } from "@/components/partners";
-import Testimonial from "@/components/testimonial";
 import { motion } from "framer-motion";
 import ProductPreview from "@/components/productpreview";
 import DialSubscription from "@/components/dialSubscription";
 import WhyChooseSection from "@/components/whychooseSection";
-import KeyFeaturesSection from "@/components/features";
 import SectionDivider from "@/components/sectionDivider";
 import { useState } from "react";
 
@@ -105,17 +102,6 @@ export default function MobileGamesPage() {
       <div className="bg-gray-50">
         <ProductPreview />
       </div>
-
-      {/* Features */}
-      <div className="bg-gradient-to-b from-white to-gray-50">
-        <KeyFeaturesSection />
-      </div>
-
-      {/* Testimonials */}
-      <Testimonial />
-
-      {/* Partners */}
-      <Partners />
 
       {/* Floating Sticky Button */}
       <button

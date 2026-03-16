@@ -2,13 +2,10 @@
 
 import { Hero } from "@/components/hero";
 import { productheroimg } from "@/assets";
-import { Partners } from "@/components/partners";
-import Testimonial from "@/components/testimonial";
 import { motion } from "framer-motion";
 import ProductPreview from "@/components/productpreview";
 import DialSubscription from "@/components/dialSubscription";
 import WhyChooseSection from "@/components/whychooseSection";
-import KeyFeaturesSection from "@/components/features";
 import SectionDivider from "@/components/sectionDivider";
 
 const fadeUp = {
@@ -106,27 +103,6 @@ export default function ContentPage() {
       <div className="bg-gray-50">
         <ProductPreview />
       </div>
-
-      {/* Features Section */}
-      <div className="bg-gradient-to-b from-white to-gray-50">
-        <KeyFeaturesSection />
-      </div>
-
-      {/* Testimonials */}
-      <Testimonial />
-
-      {/* Partners */}
-      <Partners />
-
-      {/* Floating Sticky Button */}
-      <a
-        href="https://streamd.ng"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-primary text-white py-3 px-5 rounded-full shadow-lg hover:bg-blue-700 transition-all animate-bounce z-50"
-      >
-        Visit Stream-D
-      </a>
     </div>
   );
 }

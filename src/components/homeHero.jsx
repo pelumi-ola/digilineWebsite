@@ -87,32 +87,31 @@ export function Hero({
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
-                className="flex flex-col sm:flex-row gap-6"
+                className="flex flex-col sm:flex-row gap-6 mt-15"
               >
+                {/* Primary CTA */}
                 {primaryCTA && (
                   <Link href={primaryCTA.href}>
                     <motion.div
                       whileHover={{ scale: 1.08 }}
-                      whileTap={{ scale: 0.96 }}
+                      whileTap={{ scale: 0.97 }}
                     >
-                      <Button className="bg-primary hover:bg-primary/90 text-white px-13 py-9 rounded-xl font-semibold capitalize text-sm">
+                      <Button className="bg-gradient-to-r from-[#9D66F1] via-[#7B3EF8] to-[#5A2DD0] hover:from-[#7B3EF8] hover:to-[#9D66F1] text-white px-16 py-8 rounded-3xl font-extrabold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center gap-3">
                         {primaryCTA.text}
-                        <ArrowRight className="w-5 h-5 ml-2" />
+                        <ArrowRight className="w-6 h-6" />
                       </Button>
                     </motion.div>
                   </Link>
                 )}
 
+                {/* Secondary CTA */}
                 {secondaryCTA && (
                   <Link href={secondaryCTA.href}>
                     <motion.div
-                      whileHover={{ scale: 1.08 }}
-                      whileTap={{ scale: 0.96 }}
+                      whileHover={{ scale: 1.06 }}
+                      whileTap={{ scale: 0.97 }}
                     >
-                      <Button
-                        variant="outline"
-                        className="border-2 border-primary text-primary px-10 py-8 rounded-xl font-semibold capitalize text-sm"
-                      >
+                      <Button className="bg-white/10 hover:bg-white/20 text-ring border border-primary px-14 py-8 rounded-3xl font-bold text-lg backdrop-blur-md shadow-md hover:shadow-lg transition-all duration-300">
                         {secondaryCTA.text}
                       </Button>
                     </motion.div>

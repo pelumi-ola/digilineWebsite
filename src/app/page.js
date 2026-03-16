@@ -13,6 +13,7 @@ import { RiCustomerServiceFill } from "react-icons/ri";
 import { Partners } from "@/components/partners";
 import { GridScan } from "@/components/GridScan";
 import { motion } from "framer-motion";
+import KeyFeaturesSection from "@/components/features";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 60 },
@@ -248,6 +249,11 @@ export default function Home() {
           </motion.div>
         </motion.div>
       </section>
+
+      {/* Features Section */}
+      <div className="bg-gradient-to-b from-white to-gray-50">
+        <KeyFeaturesSection />
+      </div>
 
       <div>
         <Partners />
