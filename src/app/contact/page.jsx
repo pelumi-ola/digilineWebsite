@@ -155,6 +155,7 @@ export default function ContactPage() {
         >
           <motion.div
             variants={slideUp}
+            viewport={{ once: true, amount: 0.3 }}
             className="max-w-4xl mx-auto px-6 text-center text-white"
           >
             <h2 className="text-xl font-semibold mb-3">Send us a message</h2>
@@ -168,6 +169,7 @@ export default function ContactPage() {
           {/* Floating Form Card */}
           <motion.div
             variants={slideLeft}
+            viewport={{ once: true, amount: 0.3 }}
             className="absolute left-1/2 transform -translate-x-1/2 lg:top-50 top-60 w-full max-w-2xl px-6"
           >
             <div className="bg-white rounded-xl shadow-xl p-8 md:p-10">
