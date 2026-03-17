@@ -69,15 +69,6 @@ export function Navbar() {
         { label: "Support", href: "/support" },
       ],
     },
-    {
-      label: "Policies",
-      icon: BiChevronDown,
-      mega: false,
-      dropdown: [
-        { label: "Privacy Policy", href: "/policies" },
-        { label: "IT & Platform Policy", href: "/policies/ITPolicy" },
-      ],
-    },
   ];
 
   const isParentActive = (link) => {
