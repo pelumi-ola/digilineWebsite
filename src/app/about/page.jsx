@@ -321,8 +321,8 @@ export default function AboutPage() {
                   <Image
                     src={value.icon}
                     alt={value.title}
-                    width={70}
-                    height={70}
+                    width={50}
+                    height={50}
                   />
                 </div>
 
