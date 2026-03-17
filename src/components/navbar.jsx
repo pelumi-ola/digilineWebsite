@@ -286,9 +286,9 @@ export function Navbar() {
                           {/* Products Section */}
                           {link.products?.length > 0 && (
                             <div className="mb-4">
-                              <span className="text-sm font-bold uppercase text-primary">
+                              <Link href="/products" className="text-sm font-bold uppercase text-primary">
                                 Products
-                              </span>
+                              </Link>
                               <div className="flex flex-col mt-2">
                                 {link.products.map((item) => (
                                   <Link
@@ -311,9 +311,9 @@ export function Navbar() {
                           {/* Services Section */}
                           {link.services?.length > 0 && (
                             <div>
-                              <span className="text-sm font-bold uppercase text-primary">
+                              <Link href="/solutions" className="text-sm font-bold uppercase text-primary">
                                 Services
-                              </span>
+                              </Link>
                               <div className="flex flex-col mt-2">
                                 {link.services.map((item) => (
                                   <Link

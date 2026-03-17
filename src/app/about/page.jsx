@@ -50,16 +50,16 @@ const slideLeft = {
 };
 
 const slideRight = {
-  hidden: { opacity: 0, x: 80 },
+  hidden: { opacity: 0, y: 40 },
   visible: {
     opacity: 1,
-    x: 0,
+    y: 0,
     transition: { duration: 0.8, ease: "easeOut" },
   },
 };
 
 const slideUp = {
-  hidden: { opacity: 0, y: 80 },
+  hidden: { opacity: 0, y: 40 },
   visible: {
     opacity: 1,
     y: 0,
@@ -169,7 +169,7 @@ export default function AboutPage() {
 
       <SalesPerformance />
       {/* MISSION & VISION */}
-      <motion.section className="py-20 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 lg:px-20">
           <div className="bg-[#D7D5F4] rounded-2xl p-4 md:py-8 md:px-8 flex flex-col lg:flex-row items-center justify-center gap-10">
             <motion.div
@@ -193,7 +193,7 @@ export default function AboutPage() {
                 initial="hidden"
                 whileInView="visible" // animate on scroll
                 viewport={{ once: false, amount: 0.2 }}
-                className="flex bg-[#F2F2F2] shadow-md overflow-hidden lg:w-179"
+                className="flex bg-[#F2F2F2] shadow-md lg:w-179"
               >
                 {/* Left Side */}
                 <div className="w-1/3 bg-[#8A2BE2] flex items-center justify-center py-3 px-2">
@@ -226,7 +226,7 @@ export default function AboutPage() {
                 initial="hidden"
                 whileInView="visible" // animate on scroll
                 viewport={{ once: false, amount: 0.2 }}
-                className="flex bg-[#F2F2F2] shadow-md overflow-hidden lg:w-175"
+                className="flex bg-[#F2F2F2] shadow-md lg:w-175"
               >
                 {/* Left Side */}
                 <div className="w-2/3 py-3 px-4">
@@ -266,7 +266,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </motion.section>
+      </section>
 
       {/* OUR VALUE */}
       <section className="py-20 mb-10">
