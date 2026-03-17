@@ -230,7 +230,7 @@ export default function AboutPage() {
               >
                 {/* Left Side */}
                 <div className="w-2/3 py-3 px-4">
-                  <h3 className="text-2xl font-bold text-[#000000] mb-4 text-right">
+                  <h3 className="text-2xl font-bold text-[#000000] mb-4">
                     Vision
                   </h3>
                   <ul className="space-y-6">

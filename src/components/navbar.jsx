@@ -148,7 +148,7 @@ export function Navbar() {
                             className={`text-sm font-bold mb-4 uppercase transition ${
                               pathname === "/products"
                                 ? "text-[#0C6EB5] border-b-2 border-primary"
-                                : "text-ring hover:text-primary"
+                                : "text-primary hover:text-[#A677E6]"
                             }`}
                           >
                             Products
@@ -178,7 +178,7 @@ export function Navbar() {
                             className={`text-sm font-bold uppercase transition ${
                               pathname === "/services"
                                 ? "text-[#0C6EB5] border-b-2 border-primary"
-                                : "text-ring hover:text-primary"
+                                : "text-primary hover:text-[#A677E6]"
                             }`}
                           >
                             Services
@@ -278,7 +278,6 @@ export function Navbar() {
                 )}
 
                 {/* Sublinks for mobile */}
-                {/* Sublinks for mobile */}
                 {(link.dropdown || link.mega) &&
                   openDropdown === link.label && (
                     <div className="flex flex-col pl-5 mt-1 mb-2">
@@ -287,7 +286,7 @@ export function Navbar() {
                           {/* Products Section */}
                           {link.products?.length > 0 && (
                             <div className="mb-4">
-                              <span className="text-sm font-bold uppercase text-gray-700">
+                              <span className="text-sm font-bold uppercase text-primary">
                                 Products
                               </span>
                               <div className="flex flex-col mt-2">
@@ -312,7 +311,7 @@ export function Navbar() {
                           {/* Services Section */}
                           {link.services?.length > 0 && (
                             <div>
-                              <span className="text-sm font-bold uppercase text-gray-700">
+                              <span className="text-sm font-bold uppercase text-primary">
                                 Services
                               </span>
                               <div className="flex flex-col mt-2">

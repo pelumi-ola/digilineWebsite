@@ -4,6 +4,7 @@ import Link from "next/link";
 import { BiChevronRight } from "react-icons/bi";
 import { motion } from "framer-motion";
 import GridDistortion from "./gridDistortion";
+import { usePathname } from "next/navigation";
 
 export function Hero({
   title,
@@ -13,6 +14,13 @@ export function Hero({
   textLinkRight,
   divider,
 }) {
+  const pathname = usePathname();
+
+  const linkClass = (href) =>
+    pathname === href
+      ? "text-white font-bold border-b-2 border-white pb-1"
+      : "text-white/70 hover:text-white transition-colors";
+
   return (
     <section className="relative overflow-hidden py-20 md:py-48 text-center text-white flex align-center justify-center  md:min-h-[100px]">
       <motion.div
@@ -51,7 +59,9 @@ export function Hero({
         <div className="flex flex-row items-center justify-center">
           {textLinkLeft && (
             <Link href={textLinkLeft.href}>
-              <span className="text-left">{textLinkLeft.label}</span>
+              <span className={linkClass(textLinkLeft.href)}>
+                {textLinkLeft.label}
+              </span>
             </Link>
           )}
 
@@ -61,7 +71,9 @@ export function Hero({
 
           {textLinkRight && (
             <Link href={textLinkRight.href}>
-              <span className="text-right">{textLinkRight.label}</span>
+              <span className={linkClass(textLinkRight.href)}>
+                {textLinkRight.label}
+              </span>
             </Link>
           )}
         </div>
