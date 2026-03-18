@@ -38,7 +38,7 @@ export function Footer() {
 
   return (
    <>
-    <PremiumCTA />
+    {/* <PremiumCTA /> */}
     <footer className="bg-[#9D66F1] text-white pt-24 pb-12">
       <motion.div
         variants={fadeUp}
