@@ -143,7 +143,7 @@ export function Footer() {
                 <div className="relative">
                   <Mail
                     size={20}
-                    className="absolute left-4 top-1/2 -translate-y-1/2 text-purple-400 pointer-events-none"
+                    className="absolute left-4 top-1/2 -translate-y-1/2 text-[#B177E7] pointer-events-none"
                   />
                   <Input
                     type="email"
@@ -155,7 +155,7 @@ export function Footer() {
                   />
                   <Button
                     type="submit"
-                    className="absolute right-0 top-0 bg-[#A476E3] hover:bg-purple-950 text-white font-semibold px-4 py-2 rounded-full text-sm capitalize tracking-wide"
+                    className="absolute right-0 top-0 bg-[#B177E7] hover:bg-primary text-white font-semibold px-4 py-2 rounded-full text-sm capitalize tracking-wide"
                   >
                     Subscribe
                   </Button>

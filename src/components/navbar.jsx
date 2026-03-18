@@ -112,8 +112,8 @@ export function Navbar() {
                       type="button"
                       className={`flex items-center gap-1 text-[14px] font-semibold p-2 rounded transition-colors capitalize tracking-wide ${
                         isParentActive(link)
-                          ? "bg-[hsla(271,49%,83%,1)] text-white border-b-2 border-primary"
-                          : "text-ring hover:text-white hover:bg-[hsla(271,49%,83%,1)]"
+                          ? "bg-[#B177E7] text-white border-b-2 border-primary"
+                          : "text-ring hover:text-white hover:bg-[#B177E7]"
                       }`}
                     >
                       {link.label}
@@ -129,8 +129,8 @@ export function Navbar() {
                       href={link.href}
                       className={`flex items-center gap-1 text-[14px] font-semibold p-2 rounded transition-colors capitalize tracking-wide ${
                         pathname === link.href
-                          ? "bg-[hsla(271,49%,83%,1)] text-white border-b-2 border-primary"
-                          : "text-ring hover:text-white hover:bg-[hsla(271,49%,83%,1)]"
+                          ? "bg-[#B177E7] text-white border-b-2 border-primary"
+                          : "text-ring hover:text-white hover:bg-[#B177E7]"
                       }`}
                     >
                       {link.label}
@@ -148,7 +148,7 @@ export function Navbar() {
                             className={`text-sm font-bold mb-4 uppercase transition ${
                               pathname === "/products"
                                 ? "text-[#0C6EB5] border-b-2 border-primary"
-                                : "text-primary hover:text-[#A677E6]"
+                                : "text-primary hover:text-[#B177E7]"
                             }`}
                           >
                             Products
@@ -178,7 +178,7 @@ export function Navbar() {
                             className={`text-sm font-bold uppercase transition ${
                               pathname === "/services"
                                 ? "text-[#0C6EB5] border-b-2 border-primary"
-                                : "text-primary hover:text-[#A677E6]"
+                                : "text-primary hover:text-[#B177E7]"
                             }`}
                           >
                             Services
@@ -251,8 +251,8 @@ export function Navbar() {
                     href={link.href}
                     className={`flex items-center gap-1 text-[14px] font-semibold p-2 rounded transition-colors capitalize tracking-wide ${
                       pathname === link.href
-                        ? "bg-[hsla(271,49%,83%,1)] text-white border-b-2 border-primary"
-                        : "text-ring hover:text-white hover:bg-[hsla(271,49%,83%,1)]"
+                        ? "bg-[#B177E7] text-white border-b-2 border-primary"
+                        : "text-ring hover:text-white hover:bg-[#B177E7]"
                     }`}
                     onClick={() => setIsOpen(false)}
                   >
@@ -264,8 +264,8 @@ export function Navbar() {
                     onClick={() => toggleDropdown(link.label)}
                     className={`flex items-center gap-1 text-[14px] font-semibold p-2 rounded transition-colors capitalize tracking-wide ${
                       isParentActive(link)
-                        ? "bg-[hsla(271,49%,83%,1)] text-white border-b-2 border-primary"
-                        : "text-ring hover:text-white hover:bg-[hsla(271,49%,83%,1)]"
+                        ? "bg-[#B177E7] text-white border-b-2 border-primary"
+                        : "text-ring hover:text-white hover:bg-[#B177E7]"
                     }`}
                   >
                     {link.label}
