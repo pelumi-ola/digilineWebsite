@@ -96,7 +96,7 @@ export function Hero({
                       whileHover={{ scale: 1.08 }}
                       whileTap={{ scale: 0.97 }}
                     >
-                      <Button className="bg-gradient-to-r from-[#9D66F1] via-[#7B3EF8] to-[#5A2DD0] hover:from-[#7B3EF8] hover:to-[#9D66F1] text-white px-16 py-8 rounded-3xl font-extrabold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center gap-3">
+                      <Button className="bg-primary hover:from-[#7B3EF8] hover:to-[#9D66F1] text-white px-16 py-8 rounded-3xl font-extrabold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center gap-3">
                         {primaryCTA.text}
                         <ArrowRight className="w-6 h-6 text-center" />
                       </Button>
